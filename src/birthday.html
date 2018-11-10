@@ -18,7 +18,7 @@
     </a-assets>
 
     <a-marker preset="custom" type="pattern" url="../assets/pattern-marker.patt">
-        <a-text value="Happy Birthday" align="center" position="0 0.2 1.2" rotation="-90 0 0" color="#f442eb">
+        <a-text value="Happy Birthday" align="center" position="0 0.2 1" rotation="-90 0 0" color="#f442eb">
             <a-animation attribute="rotation" repeat="indefinite" direction="alternate" easing="linear" dur="500" from="-90 0.2 -10" to="-90 0.2 10"></a-animation>
         </a-text>
         <!-- use your gltf model -->
@@ -26,7 +26,7 @@
             <a-animation attribute="rotation" repeat="indefinite" fill="forwards" easing="linear" dur="10000" from="0 0 0" to="0 360 0"></a-animation>
         </a-entity>
         <a-entity position="0 0.2 0">
-            <a-entity gltf-model="#balloon" play-all-model-animations="" scale="0.5 0.5 0.5" position="0 0 -1.5"></a-entity>
+            <a-entity gltf-model="#balloon" play-all-model-animations="" scale="0.5 0.5 0.5" position="0 0 -1.3"></a-entity>
             <a-animation attribute="rotation" dur="3000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
         </a-entity>
     </a-marker>
