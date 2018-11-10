@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html>
 <head>
-    <title>Happy Birthday</title>
+    <title>Happy Birthday WebAR</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
@@ -13,14 +13,21 @@
     <a-assets>
         <a-asset-item id="cake" src="../assets/Cake.glb"></a-asset-item>
     </a-assets>
+    <a-assets>
+        <a-asset-item id="balloon" src="../assets/Balloon.glb"></a-asset-item>
+    </a-assets>
 
     <a-marker preset="custom" type="pattern" url="../assets/pattern-marker.patt">
-        <a-text font="kelsonsans" value="Happy Birthday" align="center" position="0 0 -0.1" rotation="-90 0 0" color="#f442eb">
-            <a-animation attribute="rotation" repeat="indefinite" direction="alternate" easing="linear" dur="500" from="0 0 -10" to="0 0 10"></a-animation>
+        <a-text value="Happy Birthday" align="center" position="0 0.2 1.2" rotation="-90 0 0" color="#f442eb">
+            <a-animation attribute="rotation" repeat="indefinite" direction="alternate" easing="linear" dur="500" from="-90 0.2 -10" to="-90 0.2 10"></a-animation>
         </a-text>
         <!-- use your gltf model -->
-        <a-entity gltf-model="#cake" play-all-model-animations="" position="0 0 1" rotation="0 0 0" scale="0.1 0.1 0.1" visible="true">
+        <a-entity gltf-model="#cake" play-all-model-animations="" position="0 0.2 0" rotation="0 0 0" scale="1.2 1.2 1.2" visible="true">
             <a-animation attribute="rotation" repeat="indefinite" fill="forwards" easing="linear" dur="10000" from="0 0 0" to="0 360 0"></a-animation>
+        </a-entity>
+        <a-entity position="0 0.2 0">
+            <a-entity gltf-model="#balloon" play-all-model-animations="" scale="0.5 0.5 0.5" position="0 0 -1.5"></a-entity>
+            <a-animation attribute="rotation" dur="3000" easing="linear" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
         </a-entity>
     </a-marker>
 
