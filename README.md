@@ -9,4 +9,4 @@ A simple example of how to use webar. Just for fun.:smiley:
 ![Marker](https://github.com/bestoak/happy-birthday-webar/blob/master/images/marker.png)
 
 #### That's it. You will be able to see a yummy 3D cake.:birthday:
-![Marker](https://github.com/bestoak/happy-birthday-webar/blob/master/images/cake.png)
+<img src="https://github.com/bestoak/happy-birthday-webar/blob/master/images/cake.png" width="400">
